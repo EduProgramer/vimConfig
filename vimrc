@@ -1,10 +1,22 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+no <down> ddp
+no <up> ddkP
+no <left> <Nop>
+no <right> <Nop>
+
+imap " ""<ESC>i
+imap ' ''<ESC>i
+imap ( ()<ESC>i
+imap [ []<ESC>i
+
+imap { {}<ESC>i<CR><CR><ESC>kA<Tab>
+
+" -----------------  PLUGIMS SECTIOM ----------------------
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
@@ -44,6 +56,7 @@ Plugin 'honza/vim-snippets'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+" -----------------  PLUGIMS SECTIOM ----------------------
 
 " To ignore plugin indent changes, instead use:
 "filetype plugin on

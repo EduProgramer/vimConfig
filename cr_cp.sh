@@ -1,4 +1,4 @@
 #create copy of current vim configuration
-cp -r "/home/jakub/.vim" "/home/jakub/dummyVim/vim"
-cp  "/home/jakub/.vimrc" "/home/jakub/dummyVim/vimrc"
+sudo cp -r "/home/jakub/.vim" "/home/jakub/dummyVim/vim"
+sudo cp  "/home/jakub/.vimrc" "/home/jakub/dummyVim/vimrc"
 
