@@ -6,6 +6,9 @@ no <up> ddkP
 no <left> <Nop>
 no <right> <Nop>
 
+set listchars=tab:>-,trail:~,extends:>,precedes:<
+set list
+
 set relativenumber
 set scrolloff=17
 
@@ -54,12 +57,20 @@ let g:EasyMotion_smartcase = 1
 " auto-close
 Plugin 'Townk/vim-autoclose'
 
+" airlinebar
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+" powerbar fonts
+Plugin 'powerline/fonts'
+"let g:airline_powerline_fonts = 1
+let g:airline_theme='simple'
+
 " ---------------------------------------------------------
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
-" -----------------  PLUGIMS SECTIOM ----------------------
 
+" -----------------  PLUGIMS SECTIOM ----------------------
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
