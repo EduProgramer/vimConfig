@@ -12,9 +12,6 @@ set list
 set relativenumber
 set scrolloff=17
 
-"imap { {}<ESC>i<CR><CR><ESC>kA<Tab>
-
-
 " -----------------  PLUGIMS SECTIOM ----------------------
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -28,7 +25,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 "NERDTree 
 Plugin 'scrooloose/nerdtree'
-
+autocmd VimEnter * NERDTree
 "snippets and auto complition
 " PLUGINS
 Bundle 'ervandew/supertab'
@@ -60,10 +57,11 @@ Plugin 'Townk/vim-autoclose'
 " airlinebar
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-" powerbar fonts
+" powerbar fonts [set terminal font too]
 Plugin 'powerline/fonts'
-"let g:airline_powerline_fonts = 1
-let g:airline_theme='simple'
+let g:airline_powerline_fonts = 1
+let g:airline_theme='badwolf'
+
 
 " ---------------------------------------------------------
 " All of your Plugins must be added before the following line
