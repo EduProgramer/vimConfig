@@ -6,13 +6,7 @@ no <up> ddkP
 no <left> <Nop>
 no <right> <Nop>
 
-imap " ""<ESC>i
-imap ' ''<ESC>i
-imap ( ()<ESC>i
-imap [ []<ESC>i
-
 imap { {}<ESC>i<CR><CR><ESC>kA<Tab>
-
 " -----------------  PLUGIMS SECTIOM ----------------------
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -25,11 +19,6 @@ Plugin 'VundleVim/Vundle.vim'
 
 "NERDTree 
 Plugin 'scrooloose/nerdtree'
-
-"snippets
-"Plugin 'Shougo/neocomplete'
-"Plugin 'Shougo/neosnippet'
-"Plugin 'Shougo/neosnippet-snippets'
 
 "snippets and auto complition
 " PLUGINS
