@@ -17,6 +17,7 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+" ---------------------------------------------------------
 
 
 
@@ -42,9 +43,14 @@ Plugin 'honza/vim-snippets'
  let g:UltiSnipsJumpForwardTrigger = "<tab>"
  let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
+" easy-motion
+Plugin 'easymotion/vim-easymotion'
+let g:EasyMotion_do_mapping = 0
+nmap f <Plug>(easymotion-overwin-f2)
+let g:EasyMotion_smartcase = 1
 
 
-
+" ---------------------------------------------------------
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
