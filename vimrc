@@ -6,6 +6,9 @@ no <up> ddkP
 no <left> <Nop>
 no <right> <Nop>
 
+set relativenumber
+set scrolloff=17
+
 imap { {}<ESC>i<CR><CR><ESC>kA<Tab>
 " -----------------  PLUGIMS SECTIOM ----------------------
 " set the runtime path to include Vundle and initialize
