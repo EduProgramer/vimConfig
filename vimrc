@@ -9,7 +9,9 @@ no <right> <Nop>
 set relativenumber
 set scrolloff=17
 
-imap { {}<ESC>i<CR><CR><ESC>kA<Tab>
+"imap { {}<ESC>i<CR><CR><ESC>kA<Tab>
+
+
 " -----------------  PLUGIMS SECTIOM ----------------------
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -38,7 +40,7 @@ Plugin 'honza/vim-snippets'
  let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
  let g:SuperTabDefaultCompletionType = '<C-n>'
 
-" " better key bindings for UltiSnipsExpandTrigger
+ " better key bindings for UltiSnipsExpandTrigger
  let g:UltiSnipsExpandTrigger = "<tab>"
  let g:UltiSnipsJumpForwardTrigger = "<tab>"
  let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
@@ -49,6 +51,8 @@ let g:EasyMotion_do_mapping = 0
 nmap f <Plug>(easymotion-overwin-f2)
 let g:EasyMotion_smartcase = 1
 
+" auto-close
+Plugin 'Townk/vim-autoclose'
 
 " ---------------------------------------------------------
 " All of your Plugins must be added before the following line
