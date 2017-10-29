@@ -10,6 +10,8 @@ set listchars=eol:¬,tab:»\ ,trail:·,extends:>,precedes:<
 set list
 
 set relativenumber
+set number
+set numberwidth=3
 set scrolloff=17
 
 " -----------------  PLUGIMS SECTIOM ----------------------
