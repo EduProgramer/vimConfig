@@ -6,7 +6,7 @@ no <up> ddkP
 no <left> <Nop>
 no <right> <Nop>
 
-set listchars=tab:>-,trail:~,extends:>,precedes:<
+set listchars=eol:¬,tab:»\ ,trail:·,extends:>,precedes:<
 set list
 
 set relativenumber
@@ -25,7 +25,8 @@ Plugin 'VundleVim/Vundle.vim'
 
 "NERDTree 
 Plugin 'scrooloose/nerdtree'
-autocmd VimEnter * NERDTree
+"autocmd VimEnter * NERDTree
+
 "snippets and auto complition
 " PLUGINS
 Bundle 'ervandew/supertab'
@@ -52,7 +53,7 @@ nmap f <Plug>(easymotion-overwin-f2)
 let g:EasyMotion_smartcase = 1
 
 " auto-close
-Plugin 'Townk/vim-autoclose'
+Plugin 'Raimondi/delimitMate'
 
 " airlinebar
 Plugin 'vim-airline/vim-airline'
@@ -60,7 +61,10 @@ Plugin 'vim-airline/vim-airline-themes'
 " powerbar fonts [set terminal font too]
 Plugin 'powerline/fonts'
 let g:airline_powerline_fonts = 1
-let g:airline_theme='badwolf'
+let g:airline_theme='deus'
+
+" tagbar [need to install ctags on your distro]
+Plugin 'majutsushi/tagbar'
 
 
 " ---------------------------------------------------------
