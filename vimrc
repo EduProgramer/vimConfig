@@ -1,6 +1,10 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+set hls
+set ic
+set is
+
 no <down> ddp
 no <up> ddkP
 no <left> <Nop>
@@ -35,7 +39,7 @@ Bundle 'ervandew/supertab'
 "YMC is clang dependet had to be compiled see github for instructions
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
+"Plugin 'honza/vim-snippets'
 " COMGIURATION
  let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
 " make YCM compatible with UltiSnips (using supertab)
